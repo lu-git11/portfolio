@@ -10,8 +10,13 @@
             <img id="photo" src="{% static 'img/IMG_0541.JPG' %}">
         </div>
         <div class="contact-container">
-            <p>Email: lll@gmail.com</p>
-            <button class="email">Send</button>
+            <form id="contact-form" method="POST">
+                {% csrf_token %}
+                Name: {{ form.name }}
+                Email: {{ form.email }}
+                Message: {{ form.message }}         
+                <button class="email">Send</button>
+            </form>      
         </div>
     </div>
 
