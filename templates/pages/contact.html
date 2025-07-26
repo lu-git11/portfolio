@@ -7,29 +7,21 @@
 
     <div class="container">
         <div class="img-container">
-            <img id="photo" src="{% static 'img/IMG_0541.JPG' %}">
+            <img id="photo" src="{% static 'img/DSC06634.JPG' %}">
         </div>
         <div class="contact-container">
             <form id="contact-form" method="POST">
                 {% csrf_token %}
-                Name: {{ form.name }}
-                Email: {{ form.email }}
-                Message: {{ form.message }}         
+
+                <label for="name">Name: {{ form.name }}</label>
+                
+                <label for="email">Email: {{ form.email }}</label>
+                
+                <label for="message">Message: {{ form.message }}</label>
                 <button class="email">Send</button>
             </form>      
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 

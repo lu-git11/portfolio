@@ -19,8 +19,32 @@
   font-weight: bold;
 }
 
-.footer {
-  background-color: rgb(12, 78, 193);
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 20vh;
+    align-items: center;
+    background-color: rgb(12, 78, 193);
+}
+
+.copyright-container{
+    display: flex;
+}
+.social-container a{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 1rem;
+}
+
+.social-container i{
+    text-align: center;
+    align-content: center;
+    color: black;
+    width: 2rem;
+    height: 2rem;
+    font-size: 25px;
 }
 
 .menu {
@@ -154,9 +178,8 @@ h1{
 }
 
 .img-container img{
-    height: 150px;
-    border-radius: 90px;
-    border: 3px solid blue;
+    height: 60vh;
+    border-radius: 100px;
 }
 
 .about-container {
@@ -164,18 +187,36 @@ h1{
     margin: 20px;
 }
 
-.skills-container {
+.myskills-container {
     background-color: rgb(12, 78, 193);
     padding: 5px;
+    text-align: center;
+    justify-content: center;
 }
 
-.skills-container h2{
+.mytable-container {
+    justify-self: center;
+    max-width: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-container {
+    margin: 5px;
+    width: 100px;
+}
+
+.myskills-container h2{
     color: white;
 }
 
 .table-container {
-    justify-self: center;
-    width: 400px;
+    background-color: rgb(12, 78, 193);
+    border-radius: 10px;
+    max-width: 100%;
+    height: 35px;
+    font-size: 14px;
 }
 
 
@@ -184,16 +225,16 @@ h2 {
     margin: 20px;
 }
 
-.table-container p{
+.mytable-container p{
     justify-self: center;
     justify-content: center;
     margin: 5px;
     color: white;
-    padding: 2px;
+    padding: 3px;
     padding-bottom: 5px;
     border: 2px solid white;
     border-radius: 14px;
-    width: 50px;
+    width: fit-content;
     text-align: center;
     background-color: rgb(12, 78, 193);
 }
@@ -203,15 +244,16 @@ h2 {
 }
 
 .card{
-    margin: 10px;
     justify-self: center;
+    margin-top: 10px;
     border: 2px solid black;
     text-align: center;
+    width: 61vh;
 }
 
 .card img{
-    width: 70vh;
-    height: 70vh;
+    width: 100%;
+    height: 60vh;
 }
 
 .experience-container{
@@ -232,13 +274,12 @@ h2 {
 }
 
 .skill {
-    border: 2px solid black;
     border-radius: 14px;
     width: fit-content;
     justify-content: center;
     margin: 5px;
     color: white;
-    padding: 2px;
+    padding: 4px;
     padding-bottom: 5px;
     text-align: center;
     background-color: rgb(12, 78, 193);
@@ -265,6 +306,8 @@ h2 {
     .top-nav {
         font-size: 30px;
         font-weight: bold;
+        width: 100%;
+        position: fixed;
     }
 
     .menu{
@@ -280,11 +323,12 @@ h2 {
         flex-direction: column;
     }
     .container {
-        height: 60vh;
+        height: 100vh;
+        padding-top: 70px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-items: center;
     }
 
     .about-container{
@@ -303,11 +347,14 @@ h2 {
         flex-direction: column;
         justify-content: space-evenly;
         padding: 10px;
+        padding-top: 70px;
+        height: auto;
     }
 
     .card-container {
         display: flex;
         justify-content: space-evenly;
+
     }
 
     .card img{
@@ -315,18 +362,53 @@ h2 {
         height: 40vh;
     }
 
+    .experience-container {
+      padding-top: 50px;
+    }
+
     .experience-card-cont{
         display: flex;
         justify-content: space-evenly;
+
+    }
+
+    .experience-card {
+      width: 250px;
+    }
+
+    .experience-card p{
+      font-size: 14px;
+    }
+
+    .experience-card img {
+      height: 40vh;
     }
 
     .contact-container {
-        width: 110%;
         height: 100%;
         background-color: gainsboro;
-        text-align: center;
         padding: 20px;
+    }
 
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 400px;
+      height: 320px;
+    }
+
+    label {
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+    button {
+      width: 80px;
+      height: 35px;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
     }
 
 
@@ -339,6 +421,7 @@ h2 {
     header {
         width: 100vw;
         height: 60vh;
+        position: fixed;
     }
 
     .header-init {
